@@ -36,7 +36,7 @@
 
 ## Overview
 
-![screenshot](https://raw.githubusercontent.com/AlexRFarnes/my-team-page/main/.github/images/Capture.png)
+![screenshot](https://raw.githubusercontent.com/AlexRFarnes/my-team-page/main/.github/images/Capture.PNG)
 
 ### Built With
 
