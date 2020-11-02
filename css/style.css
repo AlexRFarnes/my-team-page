@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1400px;
+  background: #fafafa;
+  color: #000000;
+  margin: 35px auto;
+  padding: 0 25px;
+  /* height: 100vh; */
+}
+
+/* HEADER */
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  padding-right: 10%;
+  max-width: 1600px;
+}
+
+.header-container h1 {
+  font-family: "PT Serif", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  color: #000000;
+}
+
+.team-intro-container h2 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.team-intro-container p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.team-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10%;
+  row-gap: 50px;
+}
+.team-member {
+  width: 250px;
+}
+
+img {
+  float: left;
+  width: 220px;
+}
+
+.team-member .job-title {
+  font-family: "PT Serif", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  width: 150px;
+  height: 30px;
+  text-transform: uppercase;
+  display: inline-block;
+  transform: rotate(90deg);
+  position: relative;
+  right: -150px;
+  top: -260px;
+}
+
+.team-member .name {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  clear: both;
+  margin-top: -20px;
+}
+
+.team-member:nth-child(2),
+.team-member:nth-child(5) {
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 100vw;
+    padding: 10px 20px;
+  }
+  .header-container {
+    flex-direction: column;
+  }
+  h1 {
+    margin-bottom: 50px;
+  }
+
+  .team-member {
+    width: 200px;
+  }
+
+  img {
+    float: left;
+    width: 200px;
+  }
+  .team-member .job-title {
+    position: relative;
+    right: -130px;
+    top: -230px;
+  }
+
+  .team-intro-container {
+    margin-bottom: 20px;
+  }
+  .team-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5px;
+    row-gap: 50px;
+  }
+
+  .team-member:nth-child(3),
+  .team-member:nth-child(5) {
+    margin-top: -50px;
+  }
+
+  .name {
+    margin-top: -25px;
+  }
+}
+
+footer {
+  margin-top: 100px;
+  display: flex;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+footer a {
+  color: #333333;
+}
